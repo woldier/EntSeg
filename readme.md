@@ -1,7 +1,7 @@
 <div align="center">
 
 <h2 style="border-bottom: 1px solid lightgray;">
-EntSeg: Towards Geospatial Foundation Models via Efficient Continual Pre-Training
+EntSeg: Entropy-Guided Pseudo Label Denoising and Masked Image Consistency for Cross-Domain Remote Sensing Segmentation
 </h2>
 
 <div style="display: flex; align-items: center; justify-content: center;">
