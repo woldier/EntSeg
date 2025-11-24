@@ -9,9 +9,9 @@ EntSeg: Entropy-Guided Pseudo Label Denoising and Masked Image Consistency for C
   <br align="center">
     <a href='#'><img src='http://img.shields.io/badge/Paper-arxiv.xxx.xxx-B31B1B.svg?logo=arXiv&logoColor=B31B1B'></a>
     <img alt="Static Badge" src="https://img.shields.io/badge/python-v3.8-green?logo=python">
-    <img alt="Static Badge" src="https://img.shields.io/badge/torch-v2.1.2-B31B1B?logo=pytorch">
-    <img alt="Static Badge" src="https://img.shields.io/badge/mmengine-v0.9.1-blue">
-    <img alt="Static Badge" src="https://img.shields.io/badge/torchvision-v0.16.2-B31B1B?logo=pytorch">
+    <img alt="Static Badge" src="https://img.shields.io/badge/torch-v1.0.2-B31B1B?logo=pytorch">
+    <img alt="Static Badge" src="https://img.shields.io/badge/mmcv-v1.5.0-blue">
+    <img alt="Static Badge" src="https://img.shields.io/badge/torchvision-v0.11.3-B31B1B?logo=pytorch">
     </br>
     <img alt="GitHub Issues or Pull Requests" src="https://img.shields.io/github/issues/woldier/EntSeg">
     <img alt="GitHub Issues or Pull Requests" src="https://img.shields.io/github/issues-closed/woldier/EntSeg?color=ab7df8">
