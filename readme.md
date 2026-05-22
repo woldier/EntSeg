@@ -108,7 +108,7 @@ The format is as follows:
 <summary>detals</summary>
 
 ```text
-ProSFDA/
+EntSeg/
 ├── data/
 ├── ├── Potsdam_IRRG_DA/
 │   │   ├── 3_Ortho_IRRG.zip
@@ -138,6 +138,61 @@ python tools/convert_datasets/vaihingen.py data/Vaihingen_IRRG/ --clip_size 512 
 
 </details>
 
+## 3.Training 
+
+### 3.1 Preparation of pre-trained models
+
+mit_b5.pth :
+We provide a script [`mit2mmseg.py`](./tools/model_converters/mit2mmseg.py) in the tools directory to convert the key of models from [the official repo](https://github.com/NVlabs/SegFormer) to MMSegmentation style.
+```shell
+python tools/model_converters/mit2mmseg.py ${PRETRAIN_PATH} ./pretrained
+```
+Or you can download it from [google drive](https://drive.google.com/drive/folders/1cmKZgU8Ktg-v-jiwldEc6IghxVSNcFqk?usp=sharing).
+
+The structure of the file is as follows
+
+<details>
+<summary>model convert</summary>
+
+```text
+SiamSeg/
+├── pretrained/
+│   ├── mit_b5.pth (needed)
+│   └── ohter.pth  (option)
+```
+</details>
+
+### 3.2 Potsdam IRRG to Vaihingen IRRG
+
+
+
+<details>
+<summary>Potsdam IRRG to Vaihingen IRRG</summary>
+
+```shell
+# Potsdam IRRG to Vaihingen IRRG
+CUDA_VISIBLE_DEVICES=0,1  PORT=10985 \
+ ./tools/dist_train.sh \
+ config/entseg/entseg_daformer_mit-b5_POT_IRRG_2_VAI_IRRG.py 2
+```
+
+</details>
+
+
+
+### 3.3 Potsdam RGB to Vaihingen IRRG
+
+<details>
+<summary>Potsdam RGB to Vaihingen IRRG</summary>
+
+```shell
+# Potsdam RGB to Vaihingen IRRG
+CUDA_VISIBLE_DEVICES=0,1  PORT=10985 \
+ ./tools/dist_train.sh \
+ config/entseg/entseg_daformer_mit-b5_POT_RGB_2_VAI_IRRG.py 2
+```
+
+</details>
 
 ## Acknowledgements
 This project is built upon [OpenMMLab](https://openmmlab.com/codebase). We thank the OpenMMLab developers.
