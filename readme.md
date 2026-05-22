@@ -27,6 +27,7 @@ EntSeg: Entropy-Guided Pseudo Label Denoising and Masked Image Consistency for C
 
 
 ### 🔍️🔍️ NEWS
+- [2026/05/22] 🥰🥰 The Training Code has been updated.
 - [2026/05/20] 🎉🎉 Our paper is accepted by IEEE TGRS!
 - [2025/11/24] ✨✨ Init Repo.
 
