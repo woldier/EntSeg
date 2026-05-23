@@ -7,7 +7,7 @@ EntSeg: Entropy-Guided Pseudo Label Denoising and Masked Image Consistency for C
 <div style="display: flex; align-items: center; justify-content: center;">
 <p align="center">
   <br align="center">
-    <a href='#'><img src='http://img.shields.io/badge/Paper-arxiv.xxx.xxx-B31B1B.svg?logo=arXiv&logoColor=B31B1B'></a>
+    <a href='https://ieeexplore.ieee.org/document/11534173'><img src='http://img.shields.io/badge/TGRS-2026.3696112-006699.svg?logo=IEEE&logoColor=006699'></a>
     <img alt="Static Badge" src="https://img.shields.io/badge/python-v3.8-green?logo=python">
     <img alt="Static Badge" src="https://img.shields.io/badge/torch-v1.0.2-B31B1B?logo=pytorch">
     <img alt="Static Badge" src="https://img.shields.io/badge/mmcv-v1.5.0-blue">
@@ -201,10 +201,15 @@ This project is built upon [OpenMMLab](https://openmmlab.com/codebase). We thank
 ## Citation
 If you use Geoad in your research, please cite:
 ```bibtex
-@article{,
-  title={},
-  author={},
-  journal={},
-  year={}
-}
+@ARTICLE{11534173,
+  author={Wang, Bin and Chen, Zeyu and Lv, Shun and Deng, Fei and Liu, Yiguang},
+  journal={IEEE Transactions on Geoscience and Remote Sensing}, 
+  title={EntSeg: Entropy-Guided Pseudo-Label Denoising and Masked Image Consistency for Cross-Domain Remote Sensing Segmentation}, 
+  year={2026},
+  volume={},
+  number={},
+  pages={1-1},
+  keywords={Labeling;Modeling;Entropy;Training;Learning (artificial intelligence);Remote sensing;Semantic segmentation;Noise measurement;Landline;Computers;Remote Sensing;Semantic Segmentation;Self-Training;Unsupervised Domain Adaptation;Pseudo-Label Denoising},
+  doi={10.1109/TGRS.2026.3696112}}
+
 ```
